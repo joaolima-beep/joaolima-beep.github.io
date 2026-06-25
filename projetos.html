@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Lima | Meus Projetos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #1e293b;
+            max-width: 600px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #38bdf8;
+            margin-bottom: 25px;
+            text-align: center;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 15px;
+        }
+
+        .project-card {
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #38bdf8;
+            transition: transform 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateX(5px);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: #e2e8f0;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-project {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-project:hover {
+            background-color: #0ea5e9;
+        }
+
+        /* Estilo desabilitado temporário para projetos futuros */
+        .disabled {
+            background-color: #334155;
+            color: #64748b;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .btn-back {
+            display: block;
+            text-align: center;
+            color: #94a3b8;
+            text-decoration: none;
+            margin-top: 25px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <!-- PROJETO ATIVO 1: Calculadora de Peso -->
+        <div class="project-card" style="border-left-color: #10b981;">
+            <h2>Healthy Weight Calculator</h2>
+            <p>Responsive web tool built with HTML, CSS, and JavaScript. Calculates BMI and determines ideal weight
+                ranges based on WHO criteria.</p>
+            <a href="https://github.com" target="_blank" class="btn-project"
+                style="background-color: #10b981; color: #fff;">View on GitHub</a>
+        </div>
+
+        <!-- PROJETO ATIVO 2: Portfolio -->
+        <div class="project-card">
+            <h2>My Portfolio Website</h2>
+            <p>A little about me, my professional goals, and my web development journey.</p>
+            <a href="index.html" class="btn-project">View Portfolio</a>
+        </div>
+
+        <!-- PROJETO FUTURO 1: Restaurant Website -->
+        <div class="project-card" style="border-left-color: #64748b;">
+            <h2>Restaurant Website</h2>
+            <p>A small site created to simulate a restaurant website. (Coming Soon)</p>
+            <a href="#" class="btn-project disabled">Restaurant</a>
+        </div>
+
+        <!-- PROJETO FUTURO 2: Landing Page -->
+        <div class="project-card" style="border-left-color: #64748b;">
+            <h2>Landing Page</h2>
+            <p>A high-converting landing page where you can hire my services directly. (Coming Soon)</p>
+            <a href="#" class="btn-project disabled">Landing Page</a>
+        </div>
+
+        <!-- Botão Voltar -->
+        <a href="index.html" class="btn-back">← Return to the home page</a>
+    </div>
+
+</body>
+
+</html>

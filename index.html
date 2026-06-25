@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Lima | Web Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #1e293b;
+            max-width: 500px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            color: #e2e8f0;
+            margin: 20px 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .avatar-box {
+            width: 120px;
+            height: 120px;
+            background-color: #334155;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #38bdf8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #64748b;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 25px;
+        }
+
+        a {
+            display: block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0ea5e9;
+            transform: translateY(-2px);
+        }
+
+        a.secondary {
+            background-color: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        a.secondary:hover {
+            background-color: rgba(56, 189, 248, 0.1);
+        }
+
+        address {
+            margin-top: 20px;
+            font-style: normal;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Espaço para sua foto de perfil -->
+        <div class="avatar-box">
+            <span>Photo Here</span>
+        </div>
+
+        <h1>João Henrique</h1>
+        <p style="color: #38bdf8; font-weight: 500; margin-top: -10px;">Future Entrepreneur & Developer</p>
+
+        <h2>About Me</h2>
+        <p>My name is João Henrique Soares de Lima, and I am starting my journey in the world of programming. At the
+            moment, I am studying HTML, CSS, and JavaScript. I am currently developing websites for small businesses and
+            gaining experience. I would be delighted if you gave me the opportunity to help your business.</p>
+        <p>I am working towards realizing my dream of opening a programming company in the near future.</p>
+
+        <div class="links-container">
+            <a href="projetos.html">Meus Projetos</a>
+            <a href="https://github.com/joaolima-beep" target="_blank" class="secondary">GitHub</a>
+
+        </div>
+
+        <address>joaohenriqueslima2327@gmail.com</address>
+    </div>
+
+</body>
+
+</html>
